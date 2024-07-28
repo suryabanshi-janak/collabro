@@ -5,6 +5,7 @@ import { Metadata } from 'next';
 
 import { cn } from '@/lib/utils';
 import './globals.css';
+import Provider from './Provider';
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -27,7 +28,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
             fontSans.variable
           )}
         >
-          {children}
+          <Provider>{children}</Provider>
         </body>
       </html>
     </ClerkProvider>
