@@ -5,10 +5,10 @@ import Image from 'next/image';
 import { SignedOut, SignInButton, SignedIn, UserButton } from '@clerk/nextjs';
 import { RoomProvider, ClientSideSuspense } from '@liveblocks/react/suspense';
 
+import ActiveCollaborators from './ActiveCollaborators';
 import { Editor } from './editor/Editor';
 import Header from './Header';
 import Loader from './Loader';
-import ActiveCollaborators from './ActiveCollaborators';
 import { Input } from './ui/input';
 import { updateDocumentTitle } from '@/lib/actions/room.actions';
 
