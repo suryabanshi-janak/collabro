@@ -2,8 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import { RoomProvider, ClientSideSuspense } from '@liveblocks/react/suspense';
 import { SignedOut, SignInButton, SignedIn, UserButton } from '@clerk/nextjs';
+import { RoomProvider, ClientSideSuspense } from '@liveblocks/react/suspense';
 
 import { Editor } from './editor/Editor';
 import Header from './Header';
