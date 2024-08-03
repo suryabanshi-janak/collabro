@@ -15,9 +15,8 @@ import { updateDocumentTitle } from '@/lib/actions/room.actions';
 export default function CollaborativeRoom({
   roomId,
   roomMetadata,
+  currentUserType,
 }: CollaborativeRoomProps) {
-  const currentUserType = 'editor';
-
   const [documentTitle, setDocumentTitle] = useState<string>(
     roomMetadata.title
   );
@@ -129,7 +128,7 @@ export default function CollaborativeRoom({
             </div>
           </Header>
 
-          <Editor />
+          <Editor roomId={roomId} currentUserType={currentUserType!} />
         </div>
       </ClientSideSuspense>
     </RoomProvider>
